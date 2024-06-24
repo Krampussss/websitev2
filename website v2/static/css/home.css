@@ -1,0 +1,11 @@
+.container {
+    gap: 1.5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+@media screen and (width < 55em){
+    .container {
+        margin-inline: 0;
+    }
+}
