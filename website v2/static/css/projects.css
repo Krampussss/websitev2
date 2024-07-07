@@ -6,6 +6,8 @@ body {
 
 .container {
     margin: 3rem 20%;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
 }
 
 .project {

@@ -183,7 +183,8 @@ select {
 
 .logo {
   margin: -0.5rem;
-  min-width: 4rem;
+  min-width: 2.25rem;
+  
 }
 
 /* Utility Classes */
