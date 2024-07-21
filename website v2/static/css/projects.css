@@ -4,11 +4,91 @@ body {
     flex-direction: column;
 }
 
+
+.card-container {
+    margin-top: -2rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
 .container {
-    margin: 3rem 20%;
+    margin: 3rem;
     grid-template-columns: auto auto auto;
     gap: 1rem;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-dark);
+    flex: 1 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    height: 300px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  @media (max-width: 55em) {
+    .card {
+      flex: 1 0 calc(100% - 30px);
+      max-width: calc(100% - 30px);
+      font-size: 1rem;
+    }
+  }
+  
+  .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: var(--clr-lightDark);
+    border-radius: 15px;
+    color: #1A181B;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 350ms ease-in-out;
+    line-height: 1rem;
+  }
+  
+  .card:hover .card-body {
+    right: 0;
+  }
+  
+  .card-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .card-info {
+    line-height: 1.5rem;
+    margin: 40px 0;
+  }
+  
+  .btn-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card-btn {
+    text-decoration: none;
+    color: #1A181B;
+    background-color: #96E6B3;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 13px;
+    padding: 0.75rem;
+    transition: 300ms ease;
+  }
 
 .project {
     position: relative;
